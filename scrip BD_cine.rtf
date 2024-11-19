@@ -1,0 +1,698 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang3082{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 10.0.22621}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang10 CREATE DATABASE CINE_NUEVACORDOBA\par
+go\par
+USE CINE_NUEVACORDOBA\par
+GO\par
+\par
+CREATE TABLE SEXOS(\par
+ID_SEXO INT,\par
+SEXO VARCHAR (30)\par
+CONSTRAINT PK_ID_SEXO PRIMARY KEY (ID_SEXO)\par
+)\par
+\par
+CREATE TABLE PROVINCIAS(\par
+ID_PROVINCIA INT,\par
+NOM_PROVINCIA VARCHAR (50),\par
+CONSTRAINT PK_ID_PROVINCIA PRIMARY KEY (ID_PROVINCIA)\par
+)\par
+\par
+CREATE TABLE LOCALIDADES(\par
+ID_LOCALIDAD INT,\par
+NOM_LOCALIDAD VARCHAR(50),\par
+ID_PROVINCIA INT\par
+CONSTRAINT PK_LOCALIDAD PRIMARY KEY (ID_LOCALIDAD),\par
+CONSTRAINT FK_PROVINCIA FOREIGN KEY (ID_PROVINCIA)\par
+REFERENCES PROVINCIAS (ID_PROVINCIA)\par
+)\par
+\par
+CREATE TABLE BARRIOS(\par
+ID_BARRIO INT,\par
+NOM_BARRIO VARCHAR (50),\par
+ID_LOCALIDAD INT\par
+CONSTRAINT PK_BARRIO PRIMARY KEY (ID_BARRIO),\par
+CONSTRAINT FK_LOCALIDAD FOREIGN KEY (ID_LOCALIDAD)\par
+REFERENCES LOCALIDADES (ID_LOCALIDAD)\par
+)\par
+\par
+CREATE TABLE TIPOS_DOCUMENTOS(\par
+ID_TIPO_DOC INT,\par
+TIPO_DOC VARCHAR(50)\par
+CONSTRAINT PK_TIPO_DOC PRIMARY KEY (ID_TIPO_DOC)\par
+)\par
+\par
+CREATE TABLE CLIENTES(\par
+ID_CLIENTE INT,\par
+NOM_CLIENTE VARCHAR(50),\par
+APE_CLIENTE VARCHAR(50),\par
+ID_TIPO_DOC INT,\par
+NUM_DOC INT,\par
+FECHA_NAC DATE,\par
+ID_SEXO INT,\par
+ID_BARRIO INT,\par
+DOMICILIO VARCHAR(50)\par
+CONSTRAINT PK_CLIENTE PRIMARY KEY (ID_CLIENTE),\par
+CONSTRAINT FK_TIPO_DOC FOREIGN KEY (ID_TIPO_DOC)\par
+REFERENCES TIPOS_DOCUMENTOS (ID_TIPO_DOC),\par
+CONSTRAINT FK_SEXO FOREIGN KEY (ID_SEXO)\par
+REFERENCES SEXOS (ID_SEXO),\par
+CONSTRAINT FK_BARRIO_CLIENTE FOREIGN KEY (ID_BARRIO)\par
+REFERENCES BARRIOS (ID_BARRIO)\par
+)\par
+\par
+CREATE TABLE TIPOS_CONTACTOS(\par
+ID_TIPO_CONTACTO INT,\par
+TIPO_CONTACTO VARCHAR (100)\par
+CONSTRAINT PK_TIPO_CONTACTO PRIMARY KEY (ID_TIPO_CONTACTO)\par
+)\par
+\par
+CREATE TABLE CONTACTOS(\par
+ID_CONTACTO INT,\par
+ID_CLIENTE INT,\par
+ID_TIPO_CONTACTO INT,\par
+DETALLE_CONTACTO VARCHAR(50)\par
+CONSTRAINT PK_CONTACTO PRIMARY KEY (ID_CONTACTO),\par
+CONSTRAINT FK_CLIENTE_CONTACTO FOREIGN KEY (ID_CLIENTE)\par
+REFERENCES CLIENTES (ID_CLIENTE),\par
+CONSTRAINT FK_TIPO_CONTACTO FOREIGN KEY (ID_TIPO_CONTACTO)\par
+REFERENCES TIPOS_CONTACTOS (ID_TIPO_CONTACTO)\par
+)\par
+\par
+CREATE TABLE GENEROS(\par
+ID_GENERO INT,\par
+GENERO VARCHAR(50),\par
+CONSTRAINT PK_GENERO PRIMARY KEY (ID_GENERO)\par
+)\par
+\par
+CREATE TABLE RESTRICCIONES(\par
+ID_RESTRICCION INT,\par
+RESTRICCION VARCHAR(50)\par
+CONSTRAINT PK_RESTRICCION PRIMARY KEY (ID_RESTRICCION)\par
+)\par
+\par
+CREATE TABLE TIPOS_SALAS(\par
+ID_TIPO_SALA INT,\par
+TIPO_SALA VARCHAR(50)\par
+CONSTRAINT PK_TIPO_SALA PRIMARY KEY (ID_TIPO_SALA)\par
+)\par
+\par
+CREATE TABLE SALAS(\par
+ID_SALA INT,\par
+NOMBRE_SALA VARCHAR(50),\par
+CAPACIDAD INT,\par
+ID_TIPO_SALA INT\par
+CONSTRAINT PK_SALA PRIMARY KEY (ID_SALA),\par
+CONSTRAINT FK_TIPO_SALA FOREIGN KEY (ID_TIPO_SALA)\par
+REFERENCES TIPOS_SALAS (ID_TIPO_SALA)\par
+)\par
+\par
+CREATE TABLE PELICULAS(\par
+ID_PELICULA INT,\par
+NOMBRE VARCHAR (100),\par
+DURACION INT,\par
+ID_RESTRICCION INT,\par
+ID_GENERO INT\par
+CONSTRAINT PK_PELICULA PRIMARY KEY (ID_PELICULA),\par
+CONSTRAINT FK_RESTRICCION FOREIGN KEY (ID_RESTRICCION)\par
+REFERENCES RESTRICCIONES (ID_RESTRICCION),\par
+CONSTRAINT FK_GENERO FOREIGN KEY (ID_GENERO)\par
+REFERENCES GENEROS (ID_GENERO)\par
+)\par
+\par
+CREATE TABLE BUTACAS(\par
+ID_BUTACA INT,\par
+NUMERO INT,\par
+FILA VARCHAR(3),\par
+ID_SALA INT\par
+CONSTRAINT PK_BUTACA PRIMARY KEY (ID_BUTACA),\par
+CONSTRAINT FK_SALA FOREIGN KEY (ID_SALA)\par
+REFERENCES SALAS (ID_SALA)\par
+)\par
+\par
+CREATE TABLE FUNCIONES (\par
+ID_FUNCION INT,\par
+ID_PELICULA INT,\par
+ID_SALA INT,\par
+FECHA_FUNCION DATE,\par
+HORA_FUNCION TIME\par
+CONSTRAINT PK_FUNCION PRIMARY KEY (ID_FUNCION),\par
+CONSTRAINT FK_PELICULA_FUNCION FOREIGN KEY (ID_PELICULA)\par
+REFERENCES PELICULAS (ID_PELICULA),\par
+CONSTRAINT FK_SALA_FUNCIONES FOREIGN KEY (ID_SALA)\par
+REFERENCES SALAS (ID_SALA)\par
+)\par
+\par
+CREATE TABLE ESTADOS_RESERVAS(\par
+ID_ESTADO_RESERVA INT,\par
+ESTADO VARCHAR(50)\par
+CONSTRAINT PK_ESTADO_RESERVA PRIMARY KEY (ID_ESTADO_RESERVA)\par
+);\par
+\par
+\par
+CREATE TABLE RESERVAS(\par
+ID_RESERVA INT,\par
+FECHA DATE,\par
+ID_CLIENTE INT,\par
+ID_ESTADO_RESERVA INT\par
+CONSTRAINT PK_RESERVA PRIMARY KEY (ID_RESERVA),\par
+CONSTRAINT FK_CLIENTE FOREIGN KEY (ID_CLIENTE)\par
+REFERENCES CLIENTES (ID_CLIENTE),\par
+CONSTRAINT FK_ESTADO_RESERV FOREIGN KEY (ID_ESTADO_RESERVA)\par
+REFERENCES ESTADOS_RESERVAS (ID_ESTADO_RESERVA)\par
+)\par
+\par
+CREATE TABLE TICKETS(\par
+NUM_TICKET INT,\par
+ID_FUNCION INT,\par
+ID_BUTACA INT,\par
+ID_RESERVA INT NULL,\par
+PRECIO DECIMAL (10,2),\par
+FECHA DATE\par
+CONSTRAINT PK_TICKET PRIMARY KEY (NUM_TICKET),\par
+CONSTRAINT FK_FUNCION FOREIGN KEY (ID_FUNCION)\par
+REFERENCES FUNCIONES (ID_FUNCION),\par
+CONSTRAINT FK_BUTACA FOREIGN KEY (ID_BUTACA)\par
+REFERENCES BUTACAS (ID_BUTACA),\par
+CONSTRAINT FK_RESERVAS FOREIGN KEY (ID_RESERVA)\par
+REFERENCES RESERVAS (ID_RESERVA));\par
+\par
+\par
+CREATE TABLE TIPOS_COMPRAS(\par
+ID_TIPO_COMPRA INT,\par
+TIPO_COMPRA VARCHAR (30)\par
+CONSTRAINT PK_TIPO_COMPRA PRIMARY KEY (ID_TIPO_COMPRA)\par
+)\par
+\par
+CREATE TABLE FACTURAS(\par
+NUM_FACTURA INT,\par
+ID_CLIENTE INT,\par
+FECHA_FACTURA DATE,\par
+ID_TIPO_COMPRA INT\par
+CONSTRAINT PK_FACTURA PRIMARY KEY (NUM_FACTURA),\par
+CONSTRAINT FK_CLIENTES FOREIGN KEY (ID_CLIENTE)\par
+REFERENCES CLIENTES (ID_CLIENTE),\par
+CONSTRAINT FK_TIPO_COMPRA FOREIGN KEY (ID_TIPO_COMPRA)\par
+REFERENCES TIPOS_COMPRAS (ID_TIPO_COMPRA)\par
+)\par
+\par
+CREATE TABLE DETALLE_FACTURAS(\par
+ID_DETALLE_FACTURA INT,\par
+NUM_FACTURA INT,\par
+NUM_TICKET INT,\par
+CANTIDAD INT,\par
+PRECIO DECIMAL (10,2)\par
+CONSTRAINT PK_DETALLE PRIMARY KEY (ID_DETALLE_FACTURA),\par
+CONSTRAINT FK_FACTURAS FOREIGN KEY (NUM_FACTURA)\par
+REFERENCES FACTURAS (NUM_FACTURA),\par
+CONSTRAINT FK_TICKET FOREIGN KEY (NUM_TICKET)\par
+REFERENCES TICKETS (NUM_TICKET))\par
+\par
+\par
+\par
+\par
+INSERT INTO SEXOS (ID_SEXO, SEXO) VALUES (1, 'Masculino');\par
+INSERT INTO SEXOS (ID_SEXO, SEXO) VALUES (2, 'Femenino');\par
+INSERT INTO SEXOS (ID_SEXO, SEXO) VALUES (3, 'Otro');\par
+\par
+INSERT INTO PROVINCIAS (ID_PROVINCIA, NOM_PROVINCIA) VALUES (1, 'C\'f3rdoba');\par
+\par
+\par
+INSERT INTO LOCALIDADES (ID_LOCALIDAD, NOM_LOCALIDAD, ID_PROVINCIA) VALUES (1,\par
+'C\'f3rdoba Capital', 1);\par
+INSERT INTO LOCALIDADES (ID_LOCALIDAD, NOM_LOCALIDAD, ID_PROVINCIA) VALUES (2, 'Villa\par
+Carlos Paz', 1);\par
+INSERT INTO LOCALIDADES (ID_LOCALIDAD, NOM_LOCALIDAD, ID_PROVINCIA) VALUES (3, 'Alta\par
+Gracia', 1);\par
+INSERT INTO LOCALIDADES (ID_LOCALIDAD, NOM_LOCALIDAD, ID_PROVINCIA) VALUES (4, 'R\'edo\par
+Cuarto', 1);\par
+INSERT INTO LOCALIDADES (ID_LOCALIDAD, NOM_LOCALIDAD, ID_PROVINCIA) VALUES (5, 'Villa\par
+Allende', 1);\par
+\par
+INSERT INTO BARRIOS (ID_BARRIO, NOM_BARRIO, ID_LOCALIDAD) VALUES\par
+(1, 'Nueva C\'f3rdoba', 1),\par
+(2, 'Centro', 1),\par
+(3, 'Alberdi', 1),\par
+(4, 'General Paz', 1),\par
+(5, 'Cerro de las Rosas', 1),\par
+(6, 'Villa Urquiza', 1),\par
+(7, 'San Vicente', 1),\par
+(8, 'Pueyrred\'f3n', 1),\par
+(9, 'Jard\'edn', 1),\par
+(10, 'Alta C\'f3rdoba', 1),\par
+(11,'Costa Azul', 2),\par
+(12,'La cuesta', 2),\par
+(13,'Camara', 3),\par
+(14, 'El ca\'f1ito',3),\par
+(15, 'Alberdi Este',4),\par
+(16, 'Banda Norte', 4),\par
+(17, 'Golf',5),\par
+(18, 'Lomas Este',5);\par
+\par
+INSERT INTO TIPOS_DOCUMENTOS (ID_TIPO_DOC, TIPO_DOC) VALUES (1, 'DNI');\par
+INSERT INTO TIPOS_DOCUMENTOS (ID_TIPO_DOC, TIPO_DOC) VALUES (2, 'Pasaporte');\par
+INSERT INTO TIPOS_DOCUMENTOS (ID_TIPO_DOC, TIPO_DOC) VALUES (3, 'C\'e9dula');\par
+\par
+INSERT INTO CLIENTES (ID_CLIENTE, NOM_CLIENTE, APE_CLIENTE, ID_TIPO_DOC, NUM_DOC,\par
+FECHA_NAC, ID_SEXO, ID_BARRIO, DOMICILIO) VALUES\par
+(1, 'Juan', 'P\'e9rez', 1, 12345678, '1985-03-15', 1, 1, 'Calle Falsa 123'),\par
+(2, 'Mar\'eda', 'G\'f3mez', 2, 87654321, '1990-07-21', 2, 2, 'Av. Siempreviva 742'),\par
+(3, 'Pedro', 'L\'f3pez', 1, 45678901, '1975-09-12', 1, 3, 'Av. Col\'f3n 123'),\par
+(4, 'Luc\'eda', 'Fern\'e1ndez', 1, 11223344, '2000-05-22', 2, 4, 'Calle San Mart\'edn 456'),\par
+(5, 'Carlos', 'S\'e1nchez', 3, 33445566, '1968-11-30', 1, 5, 'Av. Rivadavia 789'),\par
+(6, 'Laura', 'Mart\'ednez', 1, 99887766, '1987-01-17', 2, 6, 'Av. Pueyrred\'f3n 321'),\par
+(7, 'Sof\'eda', 'Romero', 2, 22334455, '2005-06-08', 2, 7, 'Calle Tucum\'e1n 987'),\par
+(8, 'Andr\'e9s', 'Rodr\'edguez', 1, 77889900, '1979-08-13', 1, 8, 'Calle Laprida 564'),\par
+(9, 'Natalia', 'Paz', 2, 11225577, '1992-04-19', 2, 9, 'Calle C\'f3rdoba 333'),\par
+(10, 'Pablo', 'Ortega', 1, 99886655, '2002-10-05', 1, 10, 'Av. Libertador 101'),\par
+(11, 'Mart\'edn', 'Quiroga', 1, 22331155, '1983-11-11', 1, 11, 'Calle General Paz 223'),\par
+(12, 'Clara', 'Ruiz', 2, 66778899, '1998-12-15', 2, 12, 'Av. Olmos 455'),\par
+(13, 'Sebasti\'e1n', 'Mansilla', 1, 44556677, '1960-09-03', 1, 13, 'Calle Buenos Aires 125'),\par
+(14, 'Florencia', 'Gim\'e9nez', 1, 66778822, '1989-07-23', 2, 14, 'Av. Sabattini 541'),\par
+(15, 'Agust\'edn', 'Figueroa', 1, 77884455, '2001-02-16', 1, 15, 'Av. Fuerza A\'e9rea 654'),\par
+(16, 'Ver\'f3nica', 'Coronel', 2, 33225511, '1994-06-11', 2, 16, 'Calle Sucre 231'),\par
+(17, 'Lucas', 'Duarte', 1, 55443322, '1980-03-28', 1, 17, 'Av. Circunvalaci\'f3n 877'),\par
+(18, 'Patricia', 'Salas', 2, 12345679, '1974-05-09', 2, 18, 'Calle Per\'fa 521'),\par
+(19, 'Manuel', 'Aguilar', 1, 98765432, '2003-12-17', 1, 9, 'Calle Catamarca 789'),\par
+(20, 'Gabriela', 'Vallejos', 2, 87654320, '1986-11-21', 2, 10, 'Av. V\'e9lez Sarsfield 909'),\par
+(21, 'Jorge', 'Morales', 1, 99887788, '1965-08-01', 1, 1, 'Calle Illia 111'),\par
+(22, 'Ana', 'Maldonado', 2, 77886655, '1978-02-27', 2, 2, 'Calle San Juan 444'),\par
+(23, 'Tom\'e1s', 'Arias', 1, 44552233, '1993-10-14', 1, 3, 'Av. Espa\'f1a 555'),\par
+(24, 'Julieta', 'Campos', 2, 99884466, '1991-04-22', 2, 4, 'Calle Chile 444'),\par
+(25, 'Hern\'e1n', 'Acevedo', 1, 33221155, '1970-07-07', 1, 5, 'Av. La Rioja 321'),\par
+(26, 'Carolina', 'Vargas', 2, 12341122, '2000-01-15', 2, 16, 'Calle Entre R\'edos 654'),\par
+(27, 'Rodrigo', 'Miranda', 1, 99889955, '1982-09-30', 1, 7, 'Av. Belgrano 567'),\par
+(28, 'Valeria', 'P\'e9rez', 2, 44556699, '1995-02-03', 2, 18, 'Calle De\'e1n Funes 876'),\par
+(29, 'Federico', 'Bustos', 1, 66778811, '1976-10-12', 1, 9, 'Av. Hip\'f3lito Yrigoyen 222'),\par
+(30, 'Adriana', 'Funes', 2, 11224488, '1988-06-30', 2, 10, 'Calle Las Heras 341'),\par
+(31, 'Miguel', 'Ponce', 1, 22334422, '1997-12-11', 1, 1, 'Calle Corrientes 101'),\par
+(32, 'Daniela', 'Rojas', 2, 55443344, '1984-03-08', 2, 2, 'Av. Godoy Cruz 555'),\par
+(33, 'Fernando', 'Lara', 1, 77886633, '1969-07-17', 1, 13, 'Calle Obispo Trejo 123'),\par
+(34, 'Paula', 'C\'e1ceres', 2, 99884422, '1990-12-24', 2, 4, 'Calle Roma 987'),\par
+(35, 'Ricardo', 'Olivares', 1, 12346655, '2005-04-09', 1, 5, 'Av. Las Malvinas 234'),\par
+(36, 'Liliana', 'Varela', 2, 66771122, '1983-01-31', 2, 16, 'Calle La Pampa 876'),\par
+(37, 'Guillermo', 'Espinoza', 1, 88776655, '1996-06-19', 1, 7, 'Av. Argentina 555'),\par
+(38, 'M\'f3nica', 'Silva', 2, 12343322, '1981-03-27', 2, 8, 'Calle Paran\'e1 654'),\par
+(39, 'Oscar', 'Montoya', 1, 66557722, '1967-11-07', 1, 9, 'Calle Los Andes 343'),\par
+(40, 'Andrea', 'Herrera', 2, 99882211, '1999-02-15', 2, 10, 'Av. Uruguay 987'),\par
+(41, 'Enzo', 'D\'edaz', 1, 22332211, '1972-05-20', 1, 1, 'Calle Bolivia 234'),\par
+(42, 'Roc\'edo', 'G\'f3mez', 2, 44552244, '1998-06-28', 2, 12, 'Av. 9 de Julio 112'),\par
+(43, 'Santiago', 'Castro', 1, 66778899, '1994-10-18', 1, 3, 'Calle Alvear 676'),\par
+(44, 'Sol', 'Torres', 2, 11223344, '1987-07-22', 2, 4, 'Calle Salta 432'),\par
+(45, 'Mat\'edas', 'Luna', 1, 99887711, '2002-11-30', 1, 5, 'Av. Bulnes 333'),\par
+(46, 'B\'e1rbara', 'Vega', 2, 55443322, '1975-03-16', 2, 6, 'Calle Mendoza 741'),\par
+(47, 'Diego', 'Cano', 1, 77889922, '1980-08-25', 1, 7, 'Av. Roca 212'),\par
+(48, 'Luciana', 'Rey', 2, 99884400, '1991-12-12', 2, 8, 'Calle Necochea 988'),\par
+(49, 'Francisco', 'Molina', 1, 33221144, '1985-04-17', 1, 9, 'Av. Chacabuco 311'),\par
+(50, 'Elena', 'Sosa', 2, 22334411, '1992-09-05', 2, 10, 'Calle 25 de Mayo 666'),\par
+(51, 'H\'e9ctor', 'Bello', 1, 66778800, '1968-10-20', 1, 1, 'Av. Belgrano 432'),\par
+(52, 'Isabel', 'Sosa', 2, 99887722, '1995-06-30', 2, 2, 'Calle Corrientes 111'),\par
+(53, 'Ramiro', 'Ben\'edtez', 1, 77889933, '1974-07-12', 1, 3, 'Calle Uruguay 1001'),\par
+(54, 'Mar\'eda', 'Ledesma', 2, 55443366, '1981-05-07', 2, 14, 'Av. Col\'f3n 876'),\par
+(55, 'Emiliano', 'Navarro', 1, 99884488, '1999-08-23', 1, 15, 'Av. Olmos 123'),\par
+(56, 'Graciela', 'Cisneros', 2, 44556688, '1989-04-19', 2, 6, 'Calle Sucre 897'),\par
+(57, 'Nicol\'e1s', 'Guzm\'e1n', 1, 22332233, '2003-12-25', 1, 7, 'Av. Sabattini 543'),\par
+(58, 'Lorena', 'Medina', 2, 77885544, '2000-02-10', 2, 8, 'Calle Per\'fa 901'),\par
+(59, 'Mart\'edn', 'Gonz\'e1lez', 1, 44557722, '1966-06-15', 1, 9, 'Calle Pueyrred\'f3n 768'),\par
+(60, 'Daniela', 'Rivas', 2, 11223355, '1997-10-10', 2, 10, 'Calle Buenos Aires 345'),\par
+(61, 'Jos\'e9', 'Paz', 1, 22336644, '1971-11-09', 1, 1, 'Calle General Paz 654'),\par
+(62, 'Rosa', 'Peralta', 2, 66778855, '1993-03-01', 2, 2, 'Calle Viamonte 555'),\par
+(63, 'David', '\'c1lvarez', 1, 99884455, '1982-01-14', 1, 3, 'Av. La Rioja 321'),\par
+(64, 'Diana', 'Serrano', 2, 11225566, '1978-09-17', 2, 4, 'Calle General Deheza 212'),\par
+(65, 'Roberto', 'P\'e1ez', 1, 77889988, '1996-05-24', 1, 5, 'Calle Corrientes 123'),\par
+(66, 'Silvia', 'Reyes', 2, 44553322, '1984-07-31', 2, 6, 'Calle Alvear 341'),\par
+(67, 'Ignacio', 'Moyano', 1, 99887799, '1972-04-07', 1, 7, 'Calle 9 de Julio 102'),\par
+(68, 'Gabriela', 'Escobar', 2, 11223344, '2001-02-18', 2, 8, 'Calle Col\'f3n 432'),\par
+(69, 'Fabi\'e1n', 'Ledesma', 1, 66778822, '1979-08-02', 1, 9, 'Av. Sarmiento 789'),\par
+(70, 'Luc\'eda', 'Moreno', 2, 12345566, '1994-10-25', 2, 10, 'Av. San Mart\'edn 345'),\par
+(71, 'Gonzalo', 'Arce', 1, 33445577, '2003-12-29', 1, 11, 'Calle Olmos 432'),\par
+(72, 'Victoria', 'Bravo', 2, 22334455, '1998-06-21', 2, 2, 'Calle Sucre 101'),\par
+(73, 'Luis', 'Montes', 1, 55443322, '1985-09-07', 1, 3, 'Calle Chile 987'),\par
+(74, 'Beatriz', 'Saavedra', 2, 77889911, '1991-12-15', 2, 4, 'Calle Sabattini 333'),\par
+(75, 'Emanuel', 'Castillo', 1, 12346677, '1988-02-19', 1, 5, 'Calle V\'e9lez Sarsfield 321'),\par
+(76, 'Marcela', 'P\'e1ez', 2, 11225588, '1996-07-09', 2, 6, 'Calle 25 de Mayo 654'),\par
+(77, 'Cristian', 'Cabrera', 1, 66778800, '1990-11-01', 1, 7, 'Calle Catamarca 123'),\par
+(78, 'Carla', 'Barrios', 2, 44553344, '1993-09-17', 2, 8, 'Av. Fuerza A\'e9rea 567'),\par
+(79, 'Esteban', 'Ferreyra', 1, 77886622, '1982-05-30', 1, 9, 'Calle Buenos Aires 765'),\par
+(80, 'Liliana', 'Soria', 2, 99887744, '1975-10-22', 2, 10, 'Calle Pueyrred\'f3n 909'),\par
+(81, 'C\'e9sar', 'Aguirre', 1, 44556677, '2000-03-21', 1, 1, 'Av. Rivadavia 444'),\par
+(82, 'Valentina', 'Espinoza', 2, 11224455, '1992-01-07', 2, 2, 'Calle Sucre 321'),\par
+(83, 'Maximiliano', 'Blanco', 1, 22336688, '1995-12-14', 1, 3, 'Av. La Rioja 222'),\par
+(84, 'Liliana', 'Perdomo', 2, 33445533, '1980-04-27', 2, 4, 'Av. Roca 543'),\par
+(85, 'Ra\'fal', 'Dom\'ednguez', 1, 77886644, '1973-07-11', 1, 5, 'Calle Col\'f3n 121'),\par
+(86, 'Romina', 'Pe\'f1a', 2, 12343366, '1991-08-19', 2, 6, 'Calle General Paz 654'),\par
+(87, 'Adri\'e1n', 'Vega', 1, 44556633, '1997-02-22', 1, 7, 'Av. Belgrano 543'),\par
+(88, 'Josefina', 'Nu\'f1ez', 2, 22335577, '2005-09-10', 2, 8, 'Calle Alvear 876'),\par
+(89, 'Ram\'f3n', 'Arias', 1, 66778811, '1984-11-14', 1, 9, 'Av. V\'e9lez Sarsfield 678'),\par
+(90, 'Andrea', 'Cruz', 2, 99884433, '1977-06-25', 2, 10, 'Calle Chile 121');\par
+\par
+INSERT INTO TIPOS_CONTACTOS (ID_TIPO_CONTACTO, TIPO_CONTACTO) VALUES\par
+(1, 'Email'),\par
+(2, 'Tel\'e9fono');\par
+\par
+INSERT INTO CONTACTOS (ID_CONTACTO, ID_CLIENTE, ID_TIPO_CONTACTO,\par
+DETALLE_CONTACTO) VALUES\par
+(1,1,1,'juan.perez@gmail.com'),\par
+(2,2,1,'maria.gomez@hotmail.com'),\par
+(3,3,1,'pedro.lopez@outlook.com'),\par
+(4,4,1,'lucia.fernandez@live.com'),\par
+(5,5,2,'3516950214'),\par
+(6,6,1,'laura.martinez@gmail.com'),\par
+(7,7,1,'sofia.romero@hotmail.com'),\par
+(8,8,1,'andres.rodriguez@outlook.com'),\par
+(9,9,2,'351798255'),\par
+(10,10,1,'pablo.ortega@yahoo.com'),\par
+(11,11,1,'martin.quiroga@gmail.com'),\par
+(12,12,1,'clara.ruiz@hotmail.com'),\par
+(13,13,1,'sebastian.mansilla@outlook.com'),\par
+(14,14,1,'florencia.gimenez@live.com'),\par
+(15,15,1,'agustin.figueroa@yahoo.com'),\par
+(16,16,2,'3516237721'),\par
+(17,17,1,'lucas.duarte@hotmail.com'),\par
+(18,18,1,'patricia.salas@outlook.com'),\par
+(19,19,1,'manuel.aguilar@live.com'),\par
+(20,20,1,'gabriela.vallejos@yahoo.com'),\par
+(21,21,1,'jorge.morales@gmail.com'),\par
+(22,22,1,'ana.maldonado@hotmail.com'),\par
+(23,23,1,'tomas.arias@outlook.com'),\par
+(24,24,1,'julieta.campos@live.com'),\par
+(25,25,1,'hernan.acevedo@yahoo.com'),\par
+(26,26,2,'3514883277'),\par
+(27,27,1,'rodrigo.miranda@hotmail.com'),\par
+(28,28,1,'valeria.perez@outlook.com'),\par
+(29,29,1,'federico.bustos@live.com'),\par
+(30,30,1,'adriana.funes@yahoo.com'),\par
+(31,31,1,'miguel.ponce@gmail.com'),\par
+(32,32,1,'daniela.rojas@hotmail.com'),\par
+(33,33,1,'fernando.lara@outlook.com'),\par
+(34,34,1,'paula.caceres@live.com'),\par
+(35,35,1,'ricardo.olivares@yahoo.com'),\par
+(36,36,1,'liliana.varela@gmail.com'),\par
+(37,37,1,'guillermo.espinoza@hotmail.com'),\par
+(38,38,1,'monica.silva@outlook.com'),\par
+(39,39,1,'oscar.montoya@live.com'),\par
+(40,40,1,'andrea.herrera@yahoo.com'),\par
+(41,41,1,'enzo.diaz@gmail.com'),\par
+(42,42,1,'rocio.gomez@hotmail.com'),\par
+(43,43,1,'santiago.castro@outlook.com'),\par
+(44,44,1,'sol.torres@live.com'),\par
+(45,45,2,'3513524496'),\par
+(46,46,1,'barbara.vega@gmail.com'),\par
+(47,47,1,'diego.cano@hotmail.com'),\par
+(48,48,1,'luciana.rey@outlook.com'),\par
+(49,49,1,'francisco.molina@live.com'),\par
+(50,50,1,'elena.sosa@yahoo.com'),\par
+(51,51,1,'hector.bello@gmail.com'),\par
+(52,52,1,'isabel.sosa@hotmail.com'),\par
+(53,53,1,'ramiro.benitez@outlook.com'),\par
+(54,54,1,'maria.ledesma@live.com'),\par
+(55,55,1,'emiliano.navarro@yahoo.com'),\par
+(56,56,1,'graciela.cisneros@gmail.com'),\par
+(57,57,1,'nicolas.guzman@hotmail.com'),\par
+(58,58,1,'lorena.medina@outlook.com'),\par
+(59,59,1,'martin.gonzalez@live.com'),\par
+(60,60,1,'daniela.rivas@yahoo.com'),\par
+(61,61,1,'jose.paz@gmail.com'),\par
+(62,62,1,'rosa.peralta@hotmail.com'),\par
+(63,63,1,'david.alvarez@outlook.com'),\par
+(64,64,1,'diana.serrano@live.com'),\par
+(65,65,1,'roberto.paez@yahoo.com'),\par
+(66,66,1,'silvia.reyes@gmail.com'),\par
+(67,67,1,'ignacio.moyano@hotmail.com'),\par
+(68,68,1,'gabriela.escobar@outlook.com'),\par
+(69,69,1,'fabian.ledesma@live.com'),\par
+(70,70,1,'lucia.moreno@yahoo.com'),\par
+(71,71,1,'gonzalo.arce@gmail.com'),\par
+(72,72,1,'victoria.bravo@hotmail.com'),\par
+(73,73,1,'luis.montes@outlook.com'),\par
+(74,74,2,'3514445298'),\par
+(75,75,2,'3517854522'),\par
+(76,76,2,'3519555512'),\par
+(77,77,1,'cristian.cabrera@hotmail.com'),\par
+(78,78,1,'carla.barrios@outlook.com'),\par
+(79,79,1,'esteban.ferreyra@live.com'),\par
+(80,80,1,'liliana.soria@yahoo.com'),\par
+(81,81,1,'cesar.aguirre@gmail.com'),\par
+(82,82,1,'valentina.espinoza@hotmail.com'),\par
+(83,83,1,'maximiliano.blanco@outlook.com'),\par
+(84,84,1,'liliana.perdomo@live.com'),\par
+(85,85,1,'raul.dominguez@yahoo.com'),\par
+(86,86,1,'romina.pena@gmail.com'),\par
+(87,87,2,'3517896221'),\par
+(88,88,2,'3517866231'),\par
+(89,89,1,'ramon.arias@live.com'),\par
+(90,90,1,'andrea.cruz@yahoo.com');\par
+\par
+INSERT INTO GENEROS (ID_GENERO, GENERO) VALUES\par
+(1, 'Infantil'),\par
+(2, 'Terror'),\par
+(3, 'Acci\'f3n'),\par
+(4, 'Comedia'),\par
+(5, 'Drama'),\par
+(6, 'Ciencia Ficci\'f3n'),\par
+(7, 'Rom\'e1ntico'),\par
+(8, 'Aventura');\par
+\par
+INSERT INTO RESTRICCIONES (ID_RESTRICCION, RESTRICCION) VALUES\par
+(1, 'Todo P\'fablico'),\par
+(2, 'Mayores de 13 a\'f1os'),\par
+(3, 'Mayores de 18 a\'f1os');\par
+\par
+INSERT INTO TIPOS_SALAS (ID_TIPO_SALA, TIPO_SALA) VALUES\par
+(1, '2D'),\par
+(2, '3D');\par
+\par
+INSERT INTO SALAS (ID_SALA, NOMBRE_SALA, CAPACIDAD, ID_TIPO_SALA) VALUES\par
+(1, 'Sala 1', 50, 1), -- Sala 1: 50 personas (2D)\par
+(2, 'Sala 2', 60, 2), -- Sala 2: 60 personas (3D)\par
+(3, 'Sala 3', 30, 2), -- Sala 3: 30 personas (3D)\par
+(4, 'Sala 4', 20, 1) -- Sala 4: 20 personas (2D)\par
+\par
+INSERT INTO PELICULAS (ID_PELICULA, NOMBRE, DURACION, ID_RESTRICCION,\par
+ID_GENERO) VALUES\par
+(1, 'La aventura m\'e1gica', 60, 1, 1),\par
+(2, 'Noche de terror', 120, 3, 2),\par
+(3, 'Operaci\'f3n Rescate', 150, 2, 3),\par
+(4, 'Comedia en la ciudad', 100, 1, 4),\par
+(5, 'Drama en la noche', 120, 2, 5),\par
+(6, 'Viaje espacial', 120, 1, 6),\par
+(7, 'Romance bajo las estrellas', 130, 1, 7),\par
+(8, 'Aventura en la selva', 150, 1, 8),\par
+(9, 'El asesino en la oscuridad', 110, 3, 2),\par
+(10, 'La gran escapada', 120, 2, 3),\par
+(11,'Toy Story', 80, 1,1),\par
+(12, 'Buscando a Nemo', 110, 1,1),\par
+(13, 'Los increibles', 90, 1 ,1),\par
+(14, 'El conjuro', 120,3,2),\par
+(15, 'Escape Imposible', 110,2,3),\par
+(16, 'Parque Jurasico', 120,2,3),\par
+(17, 'El futbol o yo', 110,1,4),\par
+(18, 'Entrenando a Papa', 120,1,4),\par
+(19, 'Yo antes de Ti',110,2,7)\par
+\par
+INSERT INTO BUTACAS (ID_BUTACA, NUMERO, FILA, ID_SALA) VALUES\par
+(1, 1, 'A', 1), (2, 2, 'A', 1), (3, 3, 'A', 1), (4, 4, 'A', 1), (5, 5, 'A', 1),\par
+(6, 1, 'B', 1), (7, 2, 'B', 1), (8, 3, 'B', 1), (9, 4, 'B', 1), (10, 5, 'B', 1),\par
+(11, 1, 'C', 1), (12, 2, 'C', 1), (13, 3, 'C', 1), (14, 4, 'C', 1), (15, 5, 'C', 1),\par
+(16, 1, 'D', 1), (17, 2, 'D', 1), (18, 3, 'D', 1), (19, 4, 'D', 1), (20, 5, 'D', 1),\par
+(21, 1, 'E', 1), (22, 2, 'E', 1), (23, 3, 'E', 1), (24, 4, 'E', 1), (25, 5, 'E', 1),\par
+(26, 1, 'F', 1), (27, 2, 'F', 1), (28, 3, 'F', 1), (29, 4, 'F', 1), (30, 5, 'F', 1),\par
+(31, 1, 'G', 1), (32, 2, 'G', 1), (33, 3, 'G', 1), (34, 4, 'G', 1), (35, 5, 'G', 1),\par
+(36, 1, 'H', 1), (37, 2, 'H', 1), (38, 3, 'H', 1), (39, 4, 'H', 1), (40, 5, 'H', 1),\par
+(41, 1, 'I', 1), (42, 2, 'I', 1), (43, 3, 'I', 1), (44, 4, 'I', 1), (45, 5, 'I', 1),\par
+(46, 1, 'J', 1), (47, 2, 'J', 1), (48, 3, 'J', 1), (49, 4, 'J', 1), (50, 5, 'J', 1),\par
+(51, 1, 'A', 2), (52, 2, 'A', 2), (53, 3, 'A', 2), (54, 4, 'A', 2), (55, 5, 'A', 2),\par
+(56, 6, 'A', 2), (57, 1, 'B', 2), (58, 2, 'B', 2), (59, 3, 'B', 2), (60, 4, 'B', 2),\par
+(61, 5, 'B', 2), (62, 6, 'B', 2), (63, 1, 'C', 2), (64, 2, 'C', 2), (65, 3, 'C', 2),\par
+(66, 4, 'C', 2), (67, 5, 'C', 2), (68, 6, 'C', 2), (69, 1, 'D', 2), (70, 2, 'D', 2),\par
+(71, 3, 'D', 2), (72, 4, 'D', 2), (73, 5, 'D', 2), (74, 6, 'D', 2), (75, 1, 'E', 2),\par
+(76, 2, 'E', 2), (77, 3, 'E', 2), (78, 4, 'E', 2), (79, 5, 'E', 2), (80, 6, 'E', 2),\par
+(81, 1, 'F', 2), (82, 2, 'F', 2), (83, 3, 'F', 2), (84, 4, 'F', 2), (85, 5, 'F', 2),\par
+(86, 6, 'F', 2), (87, 1, 'G', 2), (88, 2, 'G', 2), (89, 3, 'G', 2), (90, 4, 'G', 2),\par
+(91, 5, 'G', 2), (92, 6, 'G', 2), (93, 1, 'H', 2), (94, 2, 'H', 2), (95, 3, 'H', 2),\par
+(96, 4, 'H', 2), (97, 5, 'H', 2), (98, 6, 'H', 2), (99, 1, 'I', 2), (100, 2, 'I', 2),\par
+(136, 2, 'A', 4), (137, 3, 'A', 4), (138, 4, 'A', 4), (139, 5, 'A', 4),\par
+(101, 3, 'I', 2), (102, 4, 'I', 2), (103, 5, 'I', 2), (104, 6, 'I', 2), (135, 1, 'A', 4),\par
+(140, 1, 'B', 4), (141, 2, 'B', 4), (142, 3, 'B', 4), (143, 4, 'B', 4), (144, 5, 'B', 4),\par
+(145, 1, 'C', 4), (146, 2, 'C', 4), (147, 3, 'C', 4), (148, 4, 'C', 4), (149, 5, 'C', 4),\par
+(150, 1, 'D', 4), (151, 2, 'D', 4), (152, 3, 'D', 4), (153, 4, 'D', 4), (154, 5, 'D', 4);\par
+\par
+INSERT INTO FUNCIONES (ID_FUNCION, ID_PELICULA, ID_SALA, FECHA_FUNCION,\par
+HORA_FUNCION) VALUES\par
+(1,1,1,'2024-01-15','15:00'),\par
+(2,1,2,'2024-01-15','18:00'),\par
+(3,1,1,'2024-01-17','15:00'),\par
+(4,1,2,'2024-01-17','20:00'),\par
+(5,2,3,'2024-02-20','21:00'),\par
+(6,2,3,'2024-02-21','23:00'),\par
+(7,2,2,'2024-02-22','21:00'),\par
+(8,2,2,'2024-02-23','23:00'),\par
+(9,3,4,'2024-03-10','14:00'),\par
+(10,3,4,'2024-03-12','17:00'),\par
+(11,3,1,'2024-03-14','19:00'),\par
+(12,3,1,'2024-03-16','20:00'),\par
+(13,4,1,'2024-04-05','16:00'),\par
+(14,4,2,'2024-04-06','19:00'),\par
+(15,4,1,'2024-04-08','15:00'),\par
+(16,4,2,'2024-04-09','21:00'),\par
+(17,5,2,'2024-05-30','21:00'),\par
+(18,5,2,'2024-05-31','23:00'),\par
+(19,5,1,'2024-06-01','20:00'),\par
+(20,5,1,'2024-06-02','22:00'),\par
+(21,6,1,'2024-06-25','15:00'),\par
+(22,6,2,'2024-06-26','18:00'),\par
+(23,6,1,'2024-06-28','16:00'),\par
+(24,6,2,'2024-06-29','20:00'),\par
+(25,7,2,'2024-07-15','18:00'),\par
+(26,7,2,'2024-07-16','20:00'),\par
+(27,7,1,'2024-07-18','15:00'),\par
+(28,7,1,'2024-07-19','17:00'),\par
+(29,8,2,'2024-08-10','15:00'),\par
+(30,8,2,'2024-08-11','17:00'),\par
+(31,8,1,'2024-08-13','16:00'),\par
+(32,8,1,'2024-08-14','18:00'),\par
+(33,9,3,'2024-09-20','22:00'),\par
+(34,9,3,'2024-09-21','23:00'),\par
+(35,9,4,'2024-09-23','22:00'),\par
+(36,9,4,'2024-09-24','23:00'),\par
+(37,10,2,'2024-10-05','19:00'),\par
+(38,10,2,'2024-10-06','20:00'),\par
+(39,10,1,'2024-10-08','16:00'),\par
+(40,10,1,'2024-10-09','18:00'),\par
+(42,1,1,'2023-05-23','16:00'),\par
+(43,1,1,'2023-06-09','20:00'),\par
+(44,2,1,'2023-05-23','22:00'),\par
+(45,2,1,'2023-05-23','17:00'),\par
+(46,3,1,'2023-09-10','15:00'),\par
+(47,4,1,'2023-02-12','12:00'),\par
+(48,4,3,'2022-01-15','16:00'),\par
+(49,5,3,'2022-12-10','18:00'),\par
+(50,6,1,'2021-03-01','16:00'),\par
+(51,6,1,'2021-06-21','19:00'),\par
+(52,7,1,'2021-08-22','20:00'),\par
+(53,7,1,'2020-02-15','21:00'),\par
+(54,11,1,'2020-07-20','19:00'),\par
+(55,16,4,'2024-06-03','14:00'),\par
+(56,19,4,'2024-07-12','15:00'),\par
+(57,18,1,'2021-05-30','17:00'),\par
+(58,17,1,'2021-07-12','18:00'),\par
+(59,17,1,'2021-12-02','15:00'),\par
+(60,18,2,'2021-08-16','19:00'),\par
+(61,18,2,'2021-04-20','20:00'),\par
+(62,16,2,'2024-09-18','13:00'),\par
+(63,15,1,'2020-04-19','18:00'),\par
+(64,14,3,'2021-03-07','16:00'),\par
+(65,11,1,'2020-08-11','15:00'),\par
+(66,13,2,'2021-05-06','22:00');\par
+\par
+\par
+INSERT INTO ESTADOS_RESERVAS (ID_ESTADO_RESERVA, ESTADO) VALUES (1,'Aprobado'), (2,'Rechazado');\par
+\par
+INSERT INTO RESERVAS (ID_RESERVA, FECHA, ID_CLIENTE, ID_ESTADO_RESERVA) VALUES \par
+(1,'2024-02-20',2,1),\par
+(2,'2021-08-16',6,1),\par
+(3,'2020-04-19',9,1),\par
+(4,'2021-05-06',11,1),\par
+(5,'2024-01-15',16,1),\par
+(6,'2024-01-17',20,1),\par
+(7,'2024-01-17',23,1),\par
+(8,'2023-02-12',26,1),\par
+(9,'2024-03-16',30,1),\par
+(10,'2024-07-12',22,2),\par
+(11,'2021-07-12',45,1),\par
+(12,'2024-09-18',50,1),\par
+(13,'2020-04-19',6,1),\par
+(14,'2024-10-08',90,1),\par
+(15,'2021-03-01',9,1),\par
+(16,'2023-09-10',3,1),\par
+(17,'2024-08-11',80,2),\par
+(18,'2024-08-10',19,1),\par
+(19,'2021-03-01',32,1),\par
+(20,'2023-02-12',26,1),\par
+(21,'2024-07-12',47,1),\par
+(22,'2020-02-15',60,1),\par
+(23,'2024-09-18',24,1),\par
+(24,'2024-03-12',85,1),\par
+(25,'2024-10-08',77,1),\par
+(26,'2020-08-11',36,2),\par
+(27,'2020-04-19',57,1),\par
+(28,'2024-07-12',83,1),\par
+(29,'2024-08-11',29,1),\par
+(30,'2024-03-12',43,2),\par
+(31,'2023-02-12',12,1);\par
+\par
+\par
+INSERT INTO TICKETS (NUM_TICKET, ID_FUNCION,ID_BUTACA,ID_RESERVA,PRECIO) VALUES\par
+(256,5,60,1,5000),\par
+(257,39,30,1,7000),\par
+(258,47,80,1,4000),\par
+(259,50,82,1,3000),\par
+(260,56,63,1,7000),\par
+(261,60,50,1,3000),\par
+(262,63,20,1,2500);\par
+\par
+INSERT INTO TICKETS (NUM_TICKET, ID_FUNCION,ID_BUTACA,ID_RESERVA,PRECIO) VALUES\par
+(263,1,1,2,5000);\par
+INSERT INTO TICKETS (NUM_TICKET, ID_FUNCION,ID_BUTACA,ID_RESERVA,PRECIO) VALUES\par
+(264,2,135,2,5000),\par
+(265,3,36,2,5000),\par
+(266,4,54,2,5000),\par
+(268,30,102,2,5000),\par
+(269,31,46,2,5000),\par
+(270,32,16,2,5000),\par
+(271,35,154,2,5000),\par
+(272,38,95,2,5000),\par
+(273,37,59,2,5000),\par
+(274,60,96,2,2500),\par
+(275,54,44,2,2500);\par
+\par
+INSERT INTO TIPOS_COMPRAS (ID_TIPO_COMPRA, TIPO_COMPRA) VALUES\par
+(1, 'Online'),\par
+(2, 'Taquilla');\par
+\par
+\par
+INSERT INTO FACTURAS (NUM_FACTURA, ID_CLIENTE, FECHA_FACTURA, ID_TIPO_COMPRA)\par
+VALUES\par
+(101,1,'2024-02-20',2),\par
+(102,2,'2024-10-08',1),\par
+(103,3,'2023-02-12',2),\par
+(104,4,'2021-03-01',2),\par
+(105,5,'2024-07-12',2),\par
+(106,6,'2021-08-16',2),\par
+(107,7,'2020-04-19',2),\par
+(108,8,'2024-01-15',2),\par
+(109,9,'2024-01-15',1),\par
+(110,10,'2024-01-17',1),\par
+(111,11,'2024-01-17',1),\par
+(112,12,'2024-01-17',1),\par
+(113,13,'2024-08-13',1),\par
+(114,14,'2024-08-14',1),\par
+(115,15,'2024-02-17',1),\par
+(116,16,'2024-09-23',2),\par
+(117,17,'2024-10-06',2),\par
+(118,18,'2024-10-05',1),\par
+(119,19,'2021-08-16',1),\par
+(120,20,'2020-07-20',2);\par
+\par
+\par
+INSERT INTO DETALLE_FACTURAS (ID_DETALLE_FACTURA, NUM_FACTURA, NUM_TICKET,CANTIDAD,PRECIO)VALUES\par
+(1,101,256,2,6000);\par
+INSERT INTO DETALLE_FACTURAS (ID_DETALLE_FACTURA, NUM_FACTURA, NUM_TICKET,CANTIDAD,PRECIO)VALUES (2,102,257,1,7000),\par
+(3,103,258,2,4500),\par
+(4,104,259,2,5000),\par
+(5,105,260,2,6000),\par
+(6,106,261,1,6500),\par
+(7,107,262,3,21000),\par
+(8,108,263,2,9000),\par
+(9,109,264,1,7000),\par
+(10,110,265,3,18000);\par
+INSERT INTO DETALLE_FACTURAS (ID_DETALLE_FACTURA, NUM_FACTURA, NUM_TICKET,CANTIDAD,PRECIO)VALUES (11,111,266,4,24000),\par
+(13,113,268,1,4000),\par
+(14,114,269,3,12000),\par
+(15,115,270,2,8000),\par
+(16,116,271,6,18000),\par
+(17,117,272,2,14000),\par
+(18,118,273,1,9000),\par
+(19,119,274,6,24000),\par
+(20,120,275,1,8000);\par
+}
+ 

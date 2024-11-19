@@ -1,0 +1,98 @@
+body {
+    background-image: url('../assets/imagen_cine.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    color: white;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px 0;
+}
+
+header p {
+    color: #ffffff !important;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f0f0f0 !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.navbar-nav .nav-item.active .nav-link {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f0f0f0;
+}
+
+@keyframes bounce {
+    0% { transform: scale(0.8); opacity: 0; }
+    50% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.navbar-brand {
+    color: #ffffff !important; /* Blanco puro para el texto */
+    font-family: 'Bebas Neue', sans-serif; /* Usar la fuente Bebas Neue (estilo cine) */
+    font-weight: 400; /* Peso de la fuente normal */
+    font-size: 8rem; /* Tamaño de fuente mucho más grande */
+    letter-spacing: 8px; /* Espaciado entre letras mayor */
+    text-shadow: 5px 5px 25px rgba(0, 0, 0, 0.7), 0 0 30px rgba(255, 255, 255, 0.9); /* Sombra intensa para resaltar */
+    text-transform: uppercase; /* Convertir el texto a mayúsculas */
+    text-align: left; /* Alinear a la izquierda */
+    line-height: 1.1; /* Espaciado entre líneas */
+    padding-top: 20px; /* Separar un poco del borde superior */
+    padding-bottom: 20px; /* Separar un poco del borde inferior */
+    animation: bounce 1s ease-out;
+}
+
+.btn-dark {
+    background-color: #333 !important;
+    border-color: #333 !important;
+}
+
+.btn-dark:hover {
+    background-color: #555 !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: white;
+}
+
+.modal-content {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+.modal-header, .modal-body {
+    border-color: #444;
+}
+

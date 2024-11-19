@@ -1,0 +1,33 @@
+.btn_sq {
+	display : inline;
+	box-sizing : content-box;
+	width : 28px;
+	height : 28px;
+	margin : 2px;
+	padding : 10px;
+	border : 1px solid #018dc4;
+	border-radius : 3px;
+	text-align : center;
+	font : normal normal bold 24px/normal Verdana,  Geneva,  sans-serif;
+	cursor : pointer;
+}
+.btn_sq:hover {
+	display : inline-block;
+	color : rgba(0, 0, 0, 1);
+	border : 1px solid #007cad;
+	background : rgba(58, 187, 234, 1);
+	box-shadow : 2px 2px 2px 0 rgba(0, 0, 0, 0.3);
+	transition : all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.butacaDisponible{
+    background-color: green;
+}
+
+.butacaOcupada{
+    background-color: red;
+}
+
+.butacaAnterior{
+    background-color: blue;
+}

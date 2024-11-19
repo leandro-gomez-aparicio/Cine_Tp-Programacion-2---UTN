@@ -1,0 +1,847 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\repositories\\ticketrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\repositories\\ticketrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\controllers\\peliculacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\controllers\\peliculacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\repositories\\funcionesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\repositories\\funcionesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\repositories\\iticketrepositoty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\repositories\\iticketrepositoty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\repositories\\generorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\repositories\\generorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\repositories\\ipelicularepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\repositories\\ipelicularepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\repositories\\isexorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\repositories\\isexorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\data\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\data\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\repositories\\igenerorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\repositories\\igenerorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\repositories\\irestriccionesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\repositories\\irestriccionesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\data\\cinecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\data\\cinecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\data\\butaca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\data\\butaca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\data\\pelicula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\data\\pelicula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\data\\funciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\data\\funciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\repositories\\ifuncionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\repositories\\ifuncionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\data\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\data\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\repositories\\iusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\repositories\\iusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\data\\sala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\data\\sala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\efpt.config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\efpt.config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\repositories\\isalasrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\repositories\\isalasrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\repositories\\pelicularepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\repositories\\pelicularepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\repositories\\ireserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\repositories\\ireserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\repositories\\ibutaca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\repositories\\ibutaca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\repositories\\butacarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\repositories\\butacarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\data\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\data\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\repositories\\utils\\datahelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\repositories\\utils\\datahelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\repositories\\reservarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\repositories\\reservarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\repositories\\salasrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\repositories\\salasrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\repositories\\restriccionesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\repositories\\restriccionesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\repositories\\sexorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\repositories\\sexorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\repositories\\tiposalarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\repositories\\tiposalarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\data\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\data\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\repositories\\itipos_salas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\repositories\\itipos_salas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\data\\genero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\data\\genero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\data\\sexo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\data\\sexo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\data\\restriccione.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\data\\restriccione.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\data\\tiposcompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\data\\tiposcompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\data\\tiposcontacto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\data\\tiposcontacto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\data\\tiposdocumento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\data\\tiposdocumento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\data\\barrio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\data\\barrio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\data\\tipossala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\data\\tipossala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\data\\estadosreserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\data\\estadosreserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\data\\detallefactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\data\\detallefactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\data\\contacto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\data\\contacto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\data\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\data\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|c:\\users\\usuario\\desktop\\tecnicatura\\2do cuatrimestre\\trabajo practico de programacion terminado\\cine_tp\\cine_tp\\cine_tp.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{3D664525-7B7D-48B0-94E4-964904D77940}|Cine_Tp\\Cine_Tp.csproj|solutionrelative:cine_tp\\cine_tp.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IPeliculaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Repositories\\IPeliculaRepository.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Repositories\\IPeliculaRepository.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Repositories\\IPeliculaRepository.cs",
+              "RelativeToolTip": "Cine_Tp\\Repositories\\IPeliculaRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T15:23:50.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GeneroRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Repositories\\GeneroRepository.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Repositories\\GeneroRepository.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Repositories\\GeneroRepository.cs",
+              "RelativeToolTip": "Cine_Tp\\Repositories\\GeneroRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAuwA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T01:52:25.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FuncionesRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Repositories\\FuncionesRepository.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Repositories\\FuncionesRepository.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Repositories\\FuncionesRepository.cs",
+              "RelativeToolTip": "Cine_Tp\\Repositories\\FuncionesRepository.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T23:31:05.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ITicketRepositoty.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Repositories\\ITicketRepositoty.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Repositories\\ITicketRepositoty.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Repositories\\ITicketRepositoty.cs",
+              "RelativeToolTip": "Cine_Tp\\Repositories\\ITicketRepositoty.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T15:58:56.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TicketRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Repositories\\TicketRepository.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Repositories\\TicketRepository.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Repositories\\TicketRepository.cs",
+              "RelativeToolTip": "Cine_Tp\\Repositories\\TicketRepository.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAiwFEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T18:37:59.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Ticket.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Data\\Ticket.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Data\\Ticket.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Data\\Ticket.cs",
+              "RelativeToolTip": "Cine_Tp\\Data\\Ticket.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAD4vxcAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T22:57:45.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PeliculaController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Controllers\\PeliculaController.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Controllers\\PeliculaController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Controllers\\PeliculaController.cs",
+              "RelativeToolTip": "Cine_Tp\\Controllers\\PeliculaController.cs",
+              "ViewState": "AgIAAHkBAAAAAAAAAAAuwIMBAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T02:05:20.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ISexoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Repositories\\ISexoRepository.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Repositories\\ISexoRepository.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Repositories\\ISexoRepository.cs",
+              "RelativeToolTip": "Cine_Tp\\Repositories\\ISexoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T00:25:19.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IGeneroRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Repositories\\IGeneroRepository.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Repositories\\IGeneroRepository.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Repositories\\IGeneroRepository.cs",
+              "RelativeToolTip": "Cine_Tp\\Repositories\\IGeneroRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T02:47:48.368Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IRestriccionesRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Repositories\\IRestriccionesRepository.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Repositories\\IRestriccionesRepository.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Repositories\\IRestriccionesRepository.cs",
+              "RelativeToolTip": "Cine_Tp\\Repositories\\IRestriccionesRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T03:14:51.497Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Butaca.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Data\\Butaca.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Data\\Butaca.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Data\\Butaca.cs",
+              "RelativeToolTip": "Cine_Tp\\Data\\Butaca.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAvwBMAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T22:57:24.794Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Funciones.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Data\\Funciones.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Data\\Funciones.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Data\\Funciones.cs",
+              "RelativeToolTip": "Cine_Tp\\Data\\Funciones.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAMwBMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T20:11:25.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CineContext.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Data\\CineContext.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Data\\CineContext.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Data\\CineContext.cs",
+              "RelativeToolTip": "Cine_Tp\\Data\\CineContext.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAawGIAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T22:56:58.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Pelicula.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Data\\Pelicula.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Data\\Pelicula.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Data\\Pelicula.cs",
+              "RelativeToolTip": "Cine_Tp\\Data\\Pelicula.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T17:15:14.35Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "Cine_Tp\\Controllers\\UsuarioController.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAewBIAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T20:20:42.248Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IFuncionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Repositories\\IFuncionRepository.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Repositories\\IFuncionRepository.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Repositories\\IFuncionRepository.cs",
+              "RelativeToolTip": "Cine_Tp\\Repositories\\IFuncionRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T19:25:21.373Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Program.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Program.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Program.cs",
+              "RelativeToolTip": "Cine_Tp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T22:22:34.466Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Data\\Usuario.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Data\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Data\\Usuario.cs",
+              "RelativeToolTip": "Cine_Tp\\Data\\Usuario.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T20:11:49.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Repositories\\UsuarioRepository.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Repositories\\UsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Repositories\\UsuarioRepository.cs",
+              "RelativeToolTip": "Cine_Tp\\Repositories\\UsuarioRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAwwAsAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T20:14:46.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IUsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Repositories\\IUsuarioRepository.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Repositories\\IUsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Repositories\\IUsuarioRepository.cs",
+              "RelativeToolTip": "Cine_Tp\\Repositories\\IUsuarioRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T20:13:08.632Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Sala.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Data\\Sala.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Data\\Sala.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Data\\Sala.cs",
+              "RelativeToolTip": "Cine_Tp\\Data\\Sala.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T22:57:46.957Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "efpt.config.json",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\efpt.config.json",
+              "RelativeDocumentMoniker": "Cine_Tp\\efpt.config.json",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\efpt.config.json",
+              "RelativeToolTip": "Cine_Tp\\efpt.config.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-06T00:12:43.497Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\appsettings.json",
+              "RelativeDocumentMoniker": "Cine_Tp\\appsettings.json",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\appsettings.json",
+              "RelativeToolTip": "Cine_Tp\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAACcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-02T01:28:33.114Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ISalasRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Repositories\\ISalasRepository.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Repositories\\ISalasRepository.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Repositories\\ISalasRepository.cs",
+              "RelativeToolTip": "Cine_Tp\\Repositories\\ISalasRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T23:25:46.34Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "PeliculaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Repositories\\PeliculaRepository.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Repositories\\PeliculaRepository.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Repositories\\PeliculaRepository.cs",
+              "RelativeToolTip": "Cine_Tp\\Repositories\\PeliculaRepository.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAuwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T15:22:49.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IReserva.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Repositories\\IReserva.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Repositories\\IReserva.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Repositories\\IReserva.cs",
+              "RelativeToolTip": "Cine_Tp\\Repositories\\IReserva.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T16:17:05.405Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "IButaca.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Repositories\\IButaca.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Repositories\\IButaca.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Repositories\\IButaca.cs",
+              "RelativeToolTip": "Cine_Tp\\Repositories\\IButaca.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T04:06:36.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ButacaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Repositories\\ButacaRepository.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Repositories\\ButacaRepository.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Repositories\\ButacaRepository.cs",
+              "RelativeToolTip": "Cine_Tp\\Repositories\\ButacaRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T01:42:00.8Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ReservaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Repositories\\ReservaRepository.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Repositories\\ReservaRepository.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Repositories\\ReservaRepository.cs",
+              "RelativeToolTip": "Cine_Tp\\Repositories\\ReservaRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T16:23:05.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Reserva.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Data\\Reserva.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Data\\Reserva.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Data\\Reserva.cs",
+              "RelativeToolTip": "Cine_Tp\\Data\\Reserva.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T23:20:23.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "DataHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Repositories\\Utils\\DataHelper.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Repositories\\Utils\\DataHelper.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Repositories\\Utils\\DataHelper.cs",
+              "RelativeToolTip": "Cine_Tp\\Repositories\\Utils\\DataHelper.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwAwAAACuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T13:43:28.642Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "RestriccionesRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Repositories\\RestriccionesRepository.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Repositories\\RestriccionesRepository.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Repositories\\RestriccionesRepository.cs",
+              "RelativeToolTip": "Cine_Tp\\Repositories\\RestriccionesRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T01:57:38.261Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "SalasRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Repositories\\SalasRepository.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Repositories\\SalasRepository.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Repositories\\SalasRepository.cs",
+              "RelativeToolTip": "Cine_Tp\\Repositories\\SalasRepository.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T00:19:27.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "SexoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Repositories\\SexoRepository.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Repositories\\SexoRepository.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Repositories\\SexoRepository.cs",
+              "RelativeToolTip": "Cine_Tp\\Repositories\\SexoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T00:36:41.388Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "TipoSalaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Repositories\\TipoSalaRepository.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Repositories\\TipoSalaRepository.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Repositories\\TipoSalaRepository.cs",
+              "RelativeToolTip": "Cine_Tp\\Repositories\\TipoSalaRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T23:53:58.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Factura.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Data\\Factura.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Data\\Factura.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Data\\Factura.cs",
+              "RelativeToolTip": "Cine_Tp\\Data\\Factura.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T01:28:54.184Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Cine_Tp\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Cine_Tp\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAQwBAAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-03T20:28:08.289Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ITipos_Salas.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Repositories\\ITipos_Salas.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Repositories\\ITipos_Salas.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Repositories\\ITipos_Salas.cs",
+              "RelativeToolTip": "Cine_Tp\\Repositories\\ITipos_Salas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T23:52:51.94Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Genero.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Data\\Genero.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Data\\Genero.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Data\\Genero.cs",
+              "RelativeToolTip": "Cine_Tp\\Data\\Genero.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T17:16:47.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Sexo.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Data\\Sexo.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Data\\Sexo.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Data\\Sexo.cs",
+              "RelativeToolTip": "Cine_Tp\\Data\\Sexo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T22:57:46.08Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Restriccione.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Data\\Restriccione.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Data\\Restriccione.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Data\\Restriccione.cs",
+              "RelativeToolTip": "Cine_Tp\\Data\\Restriccione.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T22:57:47.7Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "TiposCompra.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Data\\TiposCompra.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Data\\TiposCompra.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Data\\TiposCompra.cs",
+              "RelativeToolTip": "Cine_Tp\\Data\\TiposCompra.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T22:57:43.678Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "TiposContacto.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Data\\TiposContacto.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Data\\TiposContacto.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Data\\TiposContacto.cs",
+              "RelativeToolTip": "Cine_Tp\\Data\\TiposContacto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T22:57:42.717Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "TiposDocumento.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Data\\TiposDocumento.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Data\\TiposDocumento.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Data\\TiposDocumento.cs",
+              "RelativeToolTip": "Cine_Tp\\Data\\TiposDocumento.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T22:57:41.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Barrio.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Data\\Barrio.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Data\\Barrio.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Data\\Barrio.cs",
+              "RelativeToolTip": "Cine_Tp\\Data\\Barrio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T22:57:19.189Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "TiposSala.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Data\\TiposSala.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Data\\TiposSala.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Data\\TiposSala.cs",
+              "RelativeToolTip": "Cine_Tp\\Data\\TiposSala.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T22:57:40.722Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "EstadosReserva.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Data\\EstadosReserva.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Data\\EstadosReserva.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Data\\EstadosReserva.cs",
+              "RelativeToolTip": "Cine_Tp\\Data\\EstadosReserva.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T22:57:36.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "DetalleFactura.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Data\\DetalleFactura.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Data\\DetalleFactura.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Data\\DetalleFactura.cs",
+              "RelativeToolTip": "Cine_Tp\\Data\\DetalleFactura.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T22:57:33.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Contacto.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Data\\Contacto.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Data\\Contacto.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Data\\Contacto.cs",
+              "RelativeToolTip": "Cine_Tp\\Data\\Contacto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T22:57:32.253Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Data\\Cliente.cs",
+              "RelativeDocumentMoniker": "Cine_Tp\\Data\\Cliente.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Data\\Cliente.cs",
+              "RelativeToolTip": "Cine_Tp\\Data\\Cliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T22:57:29.119Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "Cine_Tp",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Cine_Tp.csproj",
+              "RelativeDocumentMoniker": "Cine_Tp\\Cine_Tp.csproj",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tecnicatura\\2do Cuatrimestre\\TRABAJO PRACTICO DE PROGRAMACION TERMINADO\\Cine_Tp\\Cine_Tp\\Cine_Tp.csproj",
+              "RelativeToolTip": "Cine_Tp\\Cine_Tp.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-27T22:43:46.902Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

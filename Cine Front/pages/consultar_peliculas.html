@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peliculas</title>
+    <script src="../assets/js/consultarPelicula.js"></script>
+</head>
+<body>
+    <div class="container" id="consultaPeliculas" hidden> 
+        <div class="row g-3 align-items-center">
+            <h5> Consultar películas </h5>
+            <div class="col-auto">
+              <label for="generos" class="col-form-label">Ingresar genero:</label>
+            </div>
+            <div class="col-auto">
+              <select class="form-select" id="generos">
+              </select>    
+            </div>
+            <div class="col-auto">
+                <button type="button" class="btn btn-primary"> Consultar </button>
+              </div>
+          </div>
+          <div id="resultados">
+            <table class="table mt-3">
+              <thead>
+                <tr>
+                  <th style="display: none;" scope="col">#</th>
+                  <th scope="col">Título</th>
+                  <th scope="col">Género</th>
+                  
+                </tr>
+              </thead>
+              <tbody id="tbody">
+              </tbody>  
+          </div>
+    </div>
+    
+    
+</body>
+</html>

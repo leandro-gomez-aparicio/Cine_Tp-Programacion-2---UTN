@@ -1,0 +1,134 @@
+﻿{
+   "CodeGenerationMode": 4,
+   "ContextClassName": "CineContext",
+   "ContextNamespace": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": "Data",
+   "PreserveCasingWithRegex": true,
+   "ProjectRootNamespace": "Cine_Tp",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 2,
+   "SelectedToBeGenerated": 0,
+   "T4TemplatePath": null,
+   "Tables": [
+      {
+         "Name": "[dbo].[BARRIOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[BUTACAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CLIENTES]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CONTACTOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[DETALLE_FACTURAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ESTADOS_RESERVAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FACTURAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FUNCIONES]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GENEROS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[LOCALIDADES]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[PELICULAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[PROVINCIAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[RESERVAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[RESTRICCIONES]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ROL]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SALAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SEXOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TICKETS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TIPOS_COMPRAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TIPOS_CONTACTOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TIPOS_DOCUMENTOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TIPOS_SALAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[USUARIOS]",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": null,
+   "UncountableWords": null,
+   "UseAsyncStoredProcedureCalls": true,
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDateOnlyTimeOnly": true,
+   "UseDbContextSplitting": false,
+   "UseDecimalDataAnnotationForSprocResult": true,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": true,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoNavigations": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UsePrefixNavigationNaming": false,
+   "UseSchemaFolders": false,
+   "UseSchemaNamespaces": false,
+   "UseSpatial": false,
+   "UseT4": false
+}
